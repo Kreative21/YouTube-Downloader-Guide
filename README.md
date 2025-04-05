@@ -51,7 +51,7 @@
 # Download and convert playlist
 import yt_dlp
 
-PLAYLIST_URL = "PASTE URL HERE"  # 👈 Replace with your Playlist/Video URL
+PLAYLIST_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # 👈 Replace with your Playlist/Video URL
 
 ydl_opts = {
     'format': 'bestaudio/best',
