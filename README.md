@@ -20,7 +20,7 @@
 ### 1️⃣ **Open Google Colab**
 - Go to [Google Colab](https://colab.research.google.com)
 
-- Open in **Desktop Mode** for better view if you are in mobile
+- If you are in **Mobile** then open in **Desktop Mode** for better view
 
 - Click **`File`** in the top menu → Select **`New notebook`**
 
