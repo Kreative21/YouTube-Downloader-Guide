@@ -93,7 +93,7 @@ print("\033[95m" + "✨" * 35 + "\033[0m\n")
 
 - Paste the above code into the cell
 
-- Replace the **`PASTE URL HERE`** in the code with actual Link of your playlist/video
+- Replace the **`https://www.youtube.com/watch?v=dQw4w9WgXcQ`** in the code with actual Link of your playlist/video
 
 - Click the ▶️ **button** on the left of the cell
 
