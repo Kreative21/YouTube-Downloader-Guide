@@ -22,7 +22,7 @@
 
 - If you are on **Mobile** then open in **Desktop Mode** for better view
 
-- Click **`File`** in the top menu → Select **`New notebook`**
+- Click **`File`** in the top menu → Select **`New Notebook`**
 
 ---
 
