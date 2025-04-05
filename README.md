@@ -2,7 +2,7 @@
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
 
-*Convert YouTube playlists to MP3 files directly in your browser - No technical skills needed!*
+*Download YouTube playlists to MP3 files directly in your browser - No technical skills needed!*
 
 ---
 
