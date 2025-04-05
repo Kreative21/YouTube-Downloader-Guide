@@ -56,7 +56,7 @@
 ```
 import yt_dlp
 
-PLAYLIST_URL = "PASTE_YOUR_PLAYLIST_URL_HERE"  # 👈 Replace this text
+PLAYLIST_URL = "PASTE_YOUR_PLAYLIST_URL_HERE"  # 👈 Replace this link
 
 ydl_opts = {
     'format': 'bestaudio/best',
