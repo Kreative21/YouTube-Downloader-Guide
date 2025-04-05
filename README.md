@@ -93,9 +93,9 @@ print("\033[95m" + "✨" * 35 + "\033[0m\n")
 
 - Paste the above code into the cell
 
-- Replace the `PASTE URL HERE` in the code with actual Link of your playlist/video
+- Replace the **`PASTE URL HERE`** in the code with actual Link of your playlist/video
 
-- Click the ▶️ button on the left of the cell
+- Click the ▶️ **button** on the left of the cell
 
 - Let the code RUN
 
@@ -103,6 +103,11 @@ print("\033[95m" + "✨" * 35 + "\033[0m\n")
 
 
 # ⏳ It takes time! Have patience. Longer your playlist, longer the time it will take
+
+### 4️⃣ Download Your Music
+- Look at the left sidebar → Click the **📁 Files icon**
+
+- Find **`playlist.zip`** → **`Click 3 dots`** → **`Download`**
 
 
 # 💡 Pro Tips
