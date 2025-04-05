@@ -33,41 +33,32 @@
 
 ---
 
-### 3️⃣ **Install Required Tools**
-- **Copy this code:**
-```python
+### 3️⃣ **Code**
+- **Copy paste this code in the cell:**
+```
+# ============================================
+# 🎧 YouTube Playlist Downloader - By Ronak 🎧
+# ============================================
+
+# Cleanup previous files from earlier runs
+!rm -f /content/*.mp3
+!rm -f /content/playlist.zip
+
+# Install dependencies
 !pip install yt-dlp
 !apt install ffmpeg -y
-```
-🔧 **How to run:**
 
-- Paste the code into the cell
-
-- Click the ▶️ button on the left of the cell
-
-- Let it Download the needed resources
-
----
-### 4️⃣ Add New Code Cell
-- Click **`+ Code`** in the top toolbar
-
-- A new empty cell will appear below
-
----
-
-### 5️⃣ Convert Playlist to MP3
-- **Copy this code:**
-```
+# Download and convert playlist
 import yt_dlp
 
-PLAYLIST_URL = "PASTE_YOUR_PLAYLIST_URL_HERE"  # 👈 Replace this link
+PLAYLIST_URL = "PASTE URL HERE"  # 👈 Replace with your Playlist/Video URL
 
 ydl_opts = {
     'format': 'bestaudio/best',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
         'preferredcodec': 'mp3',
-        'preferredquality': '192',
+        'preferredquality': '192',  # Change to 320 for higher quality
     }],
     'outtmpl': '/content/%(title)s.%(ext)s',
     'ignoreerrors': True,
@@ -75,36 +66,44 @@ ydl_opts = {
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([PLAYLIST_URL])
-```
-🔧 **How to run:**
 
-- Replace **`PASTE_YOUR_PLAYLIST_URL_HERE`** with your actual playlist link
-
-- Click ▶️ to run the code
-
----
-
-### ⏳ Conversion takes time! Have patience.
-
----
-
-### 6️⃣ Create ZIP File
-- Click **`+ Code`** to make another new cell
-
-- Paste this code:
-```
+# Create ZIP archive
 !zip -r playlist.zip *.mp3
+
+# Success message
+print("\n\033[92m" + "🎉" * 10 + " SUCCESS! " + "🎉" * 10)
+print("""\033[96m
+███████╗██╗   ██╗ ██████╗  ██████╗ ███████╗███████╗███████╗
+██╔════╝██║   ██║██╔════╝██╔════╝██╔════╝██╔════╝██╔════╝
+███████╗██║   ██║██║     ██║     ███████╗███████╗███████╗
+╚════██╗██║   ██║██║     ██║     ██╔════╝╚════██╗╚════██╗
+███████║╚██████╔╝╚██████╗╚██████╗████████╗███████║███████║
+╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝
+\033[0m""")
+print("\033[95m✅ ZIP file created successfully! ✅")
+print("\033[94m📦 playlist.zip is ready for download!")
+print("\033[93m➡️ Find it in the 📁 Files icon on the left!")
+print("\033[92m🌟 You can download either (Clicking the 3 DOTS):")
+print("   - Individual MP3 files")
+print("   - The complete playlist.zip")
+print("\033[95m" + "✨" * 35 + "\033[0m\n")
 ```
-- Run with ▶️ button
+
+## 🔧 **How to run:**
+
+- Paste the above code into the cell
+
+- Replace the `PASTE URL HERE` in the code with actual Link of your playlist/video
+
+- Click the ▶️ button on the left of the cell
+
+- Let the code RUN
 
 ---
 
-### 7️⃣ Download Your Music
-- Look at the left sidebar → Click the **📁 Files icon**
 
-- Find **`playlist.zip`** → **`Click 3 dots`** → **`Download`**
+# ⏳ It takes time! Have patience. Longer your playlist, longer the time it will take
 
----
 
 # 💡 Pro Tips
 - If a cell gets stuck: **`Click Runtime`** → **`Restart runtime`**
