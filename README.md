@@ -45,6 +45,8 @@
 
 - Click the ▶️ button on the left of the cell
 
+- Let it Download the needed resources
+
 ---
 ### 4️⃣ Add New Code Cell
 - Click **`+ Code`** in the top toolbar
