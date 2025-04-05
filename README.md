@@ -80,11 +80,13 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 
 - Replace **`PASTE_YOUR_PLAYLIST_URL_HERE`** with your actual playlist link
 
-- Click ▶️
+- Click ▶️ to run the code
 
 ---
 
 ### ⏳ Conversion takes time! Have patience.
+
+---
 
 ### 6️⃣ Create ZIP File
 - Click **`+ Code`** to make another new cell
