@@ -87,7 +87,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 
 - Paste this code:
 ```
-!zip -r my_music.zip *.mp3
+!zip -r playlist.zip *.mp3
 ```
 - Run with ▶️ button
 
